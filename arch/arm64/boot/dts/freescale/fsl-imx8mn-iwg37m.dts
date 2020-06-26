@@ -945,6 +945,28 @@
         };
 };
 
+&usdhc2 {  /* USDHC2: Carrier Micro SD */
+        pinctrl-names = "default", "state_100mhz", "state_200mhz";
+        pinctrl-0 = <&pinctrl_usdhc2>, <&pinctrl_usdhc2_gpio>;
+        pinctrl-1 = <&pinctrl_usdhc2_100mhz>, <&pinctrl_usdhc2_gpio>;
+        pinctrl-2 = <&pinctrl_usdhc2_200mhz>, <&pinctrl_usdhc2_gpio>;
+        vmmc-supply = <&reg_3p3v>;
+        no-1-8-v;
+        cd-gpios = <&gpio2 12 GPIO_ACTIVE_LOW>;
+        bus-width = <4>;
+        status = "okay";
+};
+
+&usdhc3 {  /*USDHC3: EMMC */
+        pinctrl-names = "default", "state_100mhz", "state_200mhz";
+        pinctrl-0 = <&pinctrl_usdhc3>;
+        pinctrl-1 = <&pinctrl_usdhc3_100mhz>;
+        pinctrl-2 = <&pinctrl_usdhc3_200mhz>;
+        bus-width = <8>;
+        non-removable;
+        status = "okay";
+};
+
 &wdog1 { /* Watchdog */
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_wdog>;
