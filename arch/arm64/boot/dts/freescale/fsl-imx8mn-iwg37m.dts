@@ -24,6 +24,10 @@
                 mmc2 = &usdhc1;
         };
 	/* external oscillator node */
+	chosen {
+		bootargs = "console=ttymxc3,115200 earlycon=ec_imx6q,0x30a60000,115200";
+		stdout-path = &uart4;
+	};
 	osc: oscillator {
 		compatible = "fixed-clock";
 		#clock-cells = <1>;
@@ -599,6 +603,38 @@
 	fsl,sai-asynchronous;
 	status = "okay";
 };
+
+&uart1 { /* UART1: Bluetooth */
+        pinctrl-names = "default";
+        pinctrl-0 = <&pinctrl_uart1>;
+        assigned-clocks = <&clk IMX8MN_CLK_UART1>;
+        assigned-clock-parents = <&clk IMX8MN_SYS_PLL1_80M>;
+        fsl,uart-has-rtscts;
+        resets = <&modem_reset>;
+        status = "okay";
+};
+
+&uart2 { /* UART2: Data UART */
+        pinctrl-names = "default";
+        pinctrl-0 = <&pinctrl_uart2>;
+        assigned-clocks = <&clk IMX8MN_CLK_UART2>;
+        assigned-clock-parents = <&clk IMX8MN_SYS_PLL1_80M>;
+        fsl,uart-has-rtscts;
+        status = "okay";
+};
+
+&uart3 { /* UART3: M4 UART */
+        pinctrl-names = "default";
+        pinctrl-0 = <&pinctrl_uart3>;
+        status = "okay";
+};
+
+&uart4 { /* UART4: Debug UART */
+        pinctrl-names = "default";
+        pinctrl-0 = <&pinctrl_uart4>;
+        status = "okay";
+};
+
 
 &wdog1 { /* Watchdog */
 	pinctrl-names = "default";
