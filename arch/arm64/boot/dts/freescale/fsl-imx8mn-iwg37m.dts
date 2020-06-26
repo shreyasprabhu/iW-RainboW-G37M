@@ -66,6 +66,15 @@
 		clock-frequency = <26000000>;
 		#clock-cells = <0>;
 	};
+
+        modem_reset: modem-reset { /* BT: BT reset */
+                compatible = "gpio-reset";
+                reset-gpios = <&gpio2 6 GPIO_ACTIVE_LOW>;
+                reset-delay-us = <2000>;
+                reset-post-delay-ms = <40>;
+                #reset-cells = <0>;
+        };
+
 	unused_gpios: unused_gpios { /* GPIO: Setting Unused GPIOs as input pins */
 		compatible = "iwave,unused-gpios";
 		pinctrl-names = "default";
