@@ -74,6 +74,12 @@
                 reset-post-delay-ms = <40>;
                 #reset-cells = <0>;
         };
+	usdhc1_pwrseq: usdhc1_pwrseq { /* WIFI: WIFI power sequence */
+                compatible = "mmc-pwrseq-simple";
+                pinctrl-names = "default";
+                pinctrl-0 = <&pinctrl_usdhc1_gpio>;
+                reset-gpios = <&gpio2 10 GPIO_ACTIVE_LOW>;
+        };
 
 	unused_gpios: unused_gpios { /* GPIO: Setting Unused GPIOs as input pins */
 		compatible = "iwave,unused-gpios";
@@ -670,6 +676,29 @@
         status = "okay";
 };
 
+
+&usdhc1 { /* USDHC1: WiFi */
+        #address-cells = <1>;
+        #size-cells = <0>;
+        pinctrl-names = "default", "state_100mhz", "state_200mhz";
+        pinctrl-0 = <&pinctrl_usdhc1>, <&pinctrl_wlan>;
+        pinctrl-1 = <&pinctrl_usdhc1_100mhz>, <&pinctrl_wlan>;
+        pinctrl-2 = <&pinctrl_usdhc1_200mhz>, <&pinctrl_wlan>;
+        mmc-pwrseq = <&usdhc1_pwrseq>;
+        bus-width = <4>;
+        non-removable;
+        wifi-host;
+        status = "okay";
+
+        brcmf: bcrmf@1 {
+                reg = <1>;
+                compatible = "brcm,bcm4329-fmac";
+                interrupt-parent = <&gpio2>;
+                interrupts = <9 IRQ_TYPE_LEVEL_HIGH>;
+                interrupt-names = "host-wake";
+                status = "okay";
+        };
+};
 
 &wdog1 { /* Watchdog */
 	pinctrl-names = "default";
