@@ -984,6 +984,15 @@
 	arm-supply = <&buck2>;
 };
 
+&usbotg1 { /* USB1: USB OTG */
+	pinctrl-names = "default";
+        pinctrl-0 = <&pinctrl_usbotg>;
+	dr_mode = "otg";
+	otg-pwr-gpio = <&gpio1 12 GPIO_ACTIVE_LOW>;
+	otg-oc-gpio = <&gpio1 13 GPIO_ACTIVE_LOW>;
+	status = "okay";
+};
+
 &gpu { /* GPU */
 	reg = <0x0 0x38000000 0 0x40000>, <0x0 0x40000000 0x0 0x40000000>, <0x0 0x0 0x0 0x4000000>;
 	status = "okay";
