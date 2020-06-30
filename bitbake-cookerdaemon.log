@@ -1,0 +1,516 @@
+--- Starting bitbake server pid 26939 at 2020-06-30 15:47:27.302544 ---
+Started bitbake server pid 26939
+DEBUG: BBCooker starting 1593512247.3038702
+DEBUG: BBCooker pyinotify1 1593512247.3089561
+DEBUG: BBCooker pyinotify2 1593512247.3091366
+DEBUG: BBCooker pyinotify3 1593512247.3124254
+DEBUG: BBCooker pyinotify complete 1593512247.3125625
+DEBUG: Found bblayers.conf (/home/iwave/iwg37m-release-bsp/build_imx8mn/conf/bblayers.conf)
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/poky/meta
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/poky/meta-poky
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-multimedia
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale-3rdparty
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale-distro
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-browser
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-gnome
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-filesystems
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-qt5
+Entering server connection loop
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:746: including conf/abi_version.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:747: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:748: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:749: including conf/local.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:750: including conf/multiconfig/default.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:751: including conf/machine/imx8mn_iwg37m.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp/conf/machine/imx8mn_iwg37m.conf:9: including conf/machine/include/imx-base.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp/conf/machine/include/imx-base.inc:3: including conf/machine/include/fsl-default-settings.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp/conf/machine/include/imx-base.inc:4: including conf/machine/include/fsl-default-versions.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp/conf/machine/imx8mn_iwg37m.conf:10: including conf/machine/include/arm/arch-arm64.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-arm64.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:752: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:753: including conf/distro/fsl-imx-xwayland.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk/conf/distro/fsl-imx-xwayland.conf:3: including conf/distro/include/fsl-imx-base.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk/conf/distro/fsl-imx-xwayland.conf:4: including conf/distro/include/fsl-imx-preferred-env.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:754: including conf/distro/defaultsetup.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/include/tcmode-default.inc:73: including conf/distro/include/as-needed.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:755: including conf/documentation.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:756: including conf/licenses.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:757: including conf/sanity.conf
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/patch.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/terminal.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/staging.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/mirrors.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/utils.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/utility-tasks.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/metadata_scm.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/logging.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-gnome/classes/sanity-meta-gnome.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+Processing Client
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+Connecting Client
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/packagedata.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/chrpath.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/insane.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/linuxloader.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/iwave/iwg37m-release-bsp/build_imx8mn/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/iwave/iwg37m-release-bsp/build_imx8mn/cache/bb_codeparser.dat'
+DEBUG: BBCooker parsed base configuration 1593512247.587141
+DEBUG: BBCooker startup complete 1593512247.5874119
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'postfile': [], 'force': False, 'dry_run': False, 'debug_domains': [], 'dump_signatures': [], 'extra_assume_provided': [], 'verbose': False, 'invalidate_stamp': None, 'abort': True, 'profile': False, 'prefile': [], 'debug': 0, 'server_timeout': None}, {'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/iwave', '_': '/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin/bitbake', 'LC_ALL': 'en_US.UTF-8', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'LANGUAGE': 'en_IN:en', 'SSH_CONNECTION': '192.168.4.4 6214 192.168.2.119 22', 'SSH_TTY': '/dev/pts/20', 'LANG': 'en_IN', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_CLIENT': '192.168.4.4 6214 22', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'TERM': 'xterm', 'BUILDDIR': '/home/iwave/iwg37m-release-bsp/build_imx8mn', 'HOME': '/home/iwave', 'USER': 'iwave', 'XDG_SESSION_ID': '160', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PATH': '/home/iwave/iwg37m-release-bsp/sources/poky/scripts:/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin:/home/iwave/bin:/home/iwave/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SHELL': '/bin/bash', 'PWD': '/home/iwave/git/iW-RainboW-G37M', 'OLDPWD': '/home/iwave', 'LOGNAME': 'iwave', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SHLVL': '1', 'BBPATH': '/home/iwave/iwg37m-release-bsp/build_imx8mn'}, ['/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin/bitbake', '-c', 'menuconfig', 'linux-iwg37m']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['setConfig', 'cmd', 'menuconfig']
+Running command ['buildTargets', ['linux-iwg37m'], 'menuconfig']
+Processing Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 27029 at 2020-06-30 15:47:53.040713 ---
+Started bitbake server pid 27029
+DEBUG: BBCooker starting 1593512273.0422077
+DEBUG: BBCooker pyinotify1 1593512273.0483623
+DEBUG: BBCooker pyinotify2 1593512273.0486135
+DEBUG: BBCooker pyinotify3 1593512273.0533404
+DEBUG: BBCooker pyinotify complete 1593512273.0535436
+DEBUG: Found bblayers.conf (/home/iwave/iwg37m-release-bsp/build_imx8mn/conf/bblayers.conf)
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/poky/meta
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/poky/meta-poky
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-multimedia
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale-3rdparty
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale-distro
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-browser
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-gnome
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-filesystems
+Entering server connection loop
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-qt5
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:746: including conf/abi_version.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:747: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:748: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:749: including conf/local.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:750: including conf/multiconfig/default.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:751: including conf/machine/imx8mn_iwg37m.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp/conf/machine/imx8mn_iwg37m.conf:9: including conf/machine/include/imx-base.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp/conf/machine/include/imx-base.inc:3: including conf/machine/include/fsl-default-settings.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp/conf/machine/include/imx-base.inc:4: including conf/machine/include/fsl-default-versions.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp/conf/machine/imx8mn_iwg37m.conf:10: including conf/machine/include/arm/arch-arm64.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-arm64.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:752: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:753: including conf/distro/fsl-imx-xwayland.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk/conf/distro/fsl-imx-xwayland.conf:3: including conf/distro/include/fsl-imx-base.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk/conf/distro/fsl-imx-xwayland.conf:4: including conf/distro/include/fsl-imx-preferred-env.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:754: including conf/distro/defaultsetup.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/include/tcmode-default.inc:73: including conf/distro/include/as-needed.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:755: including conf/documentation.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:756: including conf/licenses.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:757: including conf/sanity.conf
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/patch.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/terminal.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/staging.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/mirrors.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/utils.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/utility-tasks.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/metadata_scm.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/logging.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-gnome/classes/sanity-meta-gnome.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+Processing Client
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+Connecting Client
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/packagedata.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/chrpath.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/insane.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/linuxloader.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/iwave/iwg37m-release-bsp/build_imx8mn/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/iwave/iwg37m-release-bsp/build_imx8mn/cache/bb_codeparser.dat'
+DEBUG: BBCooker parsed base configuration 1593512273.3275862
+DEBUG: BBCooker startup complete 1593512273.327857
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'prefile': [], 'server_timeout': None, 'debug': 0, 'profile': False, 'debug_domains': [], 'extra_assume_provided': [], 'force': False, 'dump_signatures': [], 'verbose': False, 'invalidate_stamp': None, 'abort': True, 'dry_run': False, 'postfile': []}, {'SSH_CLIENT': '192.168.4.4 6214 22', 'XDG_SESSION_ID': '160', 'BUILDDIR': '/home/iwave/iwg37m-release-bsp/build_imx8mn', 'XDG_RUNTIME_DIR': '/run/user/1000', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'iwave', 'OLDPWD': '/home/iwave', 'TERM': 'xterm', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'SHELL': '/bin/bash', 'SSH_TTY': '/dev/pts/20', 'MAIL': '/var/mail/iwave', 'PATH': '/home/iwave/iwg37m-release-bsp/sources/poky/scripts:/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin:/home/iwave/bin:/home/iwave/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SHLVL': '1', 'LC_ALL': 'en_US.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', '_': '/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin/bitbake', 'HOME': '/home/iwave', 'LOGNAME': 'iwave', 'PWD': '/home/iwave/git/iW-RainboW-G37M', 'SSH_CONNECTION': '192.168.4.4 6214 192.168.2.119 22', 'BBPATH': '/home/iwave/iwg37m-release-bsp/build_imx8mn', 'LANGUAGE': 'en_IN:en', 'LANG': 'en_IN', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'}, ['/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin/bitbake', 'linux-iwg37m']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['linux-iwg37m'], 'build']
+Processing Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 27138 at 2020-06-30 15:54:01.624702 ---
+Started bitbake server pid 27138
+DEBUG: BBCooker starting 1593512641.6262248
+DEBUG: BBCooker pyinotify1 1593512641.6327448
+DEBUG: BBCooker pyinotify2 1593512641.6330173
+DEBUG: BBCooker pyinotify3 1593512641.6380224
+DEBUG: BBCooker pyinotify complete 1593512641.6382415
+DEBUG: Found bblayers.conf (/home/iwave/iwg37m-release-bsp/build_imx8mn/conf/bblayers.conf)
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/poky/meta
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/poky/meta-poky
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-multimedia
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale-3rdparty
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale-distro
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-browser
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-gnome
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-filesystems
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-qt5
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:746: including conf/abi_version.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:747: including conf/site.conf
+Entering server connection loop
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:748: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:749: including conf/local.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:750: including conf/multiconfig/default.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:751: including conf/machine/imx8qm_iwg27m.conf
+DEBUG: CONF file 'conf/machine/imx8qm_iwg27m.conf' not found
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:752: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:753: including conf/distro/fsl-imx-xwayland.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk/conf/distro/fsl-imx-xwayland.conf:3: including conf/distro/include/fsl-imx-base.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk/conf/distro/fsl-imx-xwayland.conf:4: including conf/distro/include/fsl-imx-preferred-env.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:754: including conf/distro/defaultsetup.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/include/tcmode-default.inc:73: including conf/distro/include/as-needed.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:755: including conf/documentation.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:756: including conf/licenses.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:757: including conf/sanity.conf
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/patch.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/terminal.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/staging.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/mirrors.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/utils.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/utility-tasks.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/metadata_scm.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/logging.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-gnome/classes/sanity-meta-gnome.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/packagedata.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/chrpath.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/insane.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/linuxloader.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/iwave/iwg37m-release-bsp/build_imx8mn/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/iwave/iwg37m-release-bsp/build_imx8mn/cache/bb_codeparser.dat'
+DEBUG: BBCooker parsed base configuration 1593512641.8611934
+DEBUG: BBCooker startup complete 1593512641.86134
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+Processing Client
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'prefile': [], 'postfile': [], 'debug': 0, 'verbose': False, 'force': False, 'extra_assume_provided': [], 'server_timeout': None, 'dry_run': False, 'dump_signatures': [], 'abort': True, 'debug_domains': [], 'invalidate_stamp': None, 'profile': False}, {'BBPATH': '/home/iwave/iwg37m-release-bsp/build_imx8mn', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'PWD': '/home/iwave/git/iW-RainboW-G37M', 'PATH': '/home/iwave/iwg37m-release-bsp/sources/poky/scripts:/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin:/home/iwave/bin:/home/iwave/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'BUILDDIR': '/home/iwave/iwg37m-release-bsp/build_imx8mn', 'XDG_SESSION_ID': '160', 'TERM': 'xterm', 'XDG_RUNTIME_DIR': '/run/user/1000', 'MAIL': '/var/mail/iwave', 'SHELL': '/bin/bash', 'LANG': 'en_IN', 'SHLVL': '1', 'LOGNAME': 'iwave', 'HOME': '/home/iwave', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'DISTRO': 'fsl-imx-xwayland', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'iwave', '_': '/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin/bitbake', 'SSH_TTY': '/dev/pts/20', 'SSH_CLIENT': '192.168.4.4 6214 22', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_CONNECTION': '192.168.4.4 6214 192.168.2.119 22', 'MACHINE': 'imx8qm_iwg27m', 'LC_ALL': 'en_US.UTF-8', 'OLDPWD': '/home/iwave'}, ['/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin/bitbake', 'core-image-minimal', '-c', 'populate_sd']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['setConfig', 'cmd', 'populate_sd']
+Running command ['buildTargets', ['core-image-minimal'], 'populate_sd']
+Processing Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 32175 at 2020-06-30 16:03:26.870364 ---
+Started bitbake server pid 32175
+DEBUG: BBCooker starting 1593513206.8718224
+DEBUG: BBCooker pyinotify1 1593513206.8780382
+DEBUG: BBCooker pyinotify2 1593513206.8783085
+DEBUG: BBCooker pyinotify3 1593513206.8830276
+DEBUG: BBCooker pyinotify complete 1593513206.8832455
+DEBUG: Found bblayers.conf (/home/iwave/iwg37m-release-bsp/build_imx8mn/conf/bblayers.conf)
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/poky/meta
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/poky/meta-poky
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-multimedia
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale-3rdparty
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale-distro
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-browser
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-gnome
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-filesystems
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-qt5
+Entering server connection loop
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:746: including conf/abi_version.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:747: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:748: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:749: including conf/local.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:750: including conf/multiconfig/default.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:751: including conf/machine/imx8qm_iwg27m.conf
+DEBUG: CONF file 'conf/machine/imx8qm_iwg27m.conf' not found
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:752: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:753: including conf/distro/fsl-imx-xwayland.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk/conf/distro/fsl-imx-xwayland.conf:3: including conf/distro/include/fsl-imx-base.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk/conf/distro/fsl-imx-xwayland.conf:4: including conf/distro/include/fsl-imx-preferred-env.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:754: including conf/distro/defaultsetup.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/include/tcmode-default.inc:73: including conf/distro/include/as-needed.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:755: including conf/documentation.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:756: including conf/licenses.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:757: including conf/sanity.conf
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/patch.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/terminal.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/staging.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/mirrors.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/utils.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/utility-tasks.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/metadata_scm.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/logging.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-gnome/classes/sanity-meta-gnome.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/packagedata.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/chrpath.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/insane.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/linuxloader.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/iwave/iwg37m-release-bsp/build_imx8mn/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/iwave/iwg37m-release-bsp/build_imx8mn/cache/bb_codeparser.dat'
+DEBUG: BBCooker parsed base configuration 1593513207.0981297
+DEBUG: BBCooker startup complete 1593513207.0982726
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+Processing Client
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'profile': False, 'debug_domains': [], 'invalidate_stamp': None, 'debug': 0, 'force': False, 'verbose': False, 'server_timeout': None, 'abort': True, 'extra_assume_provided': [], 'prefile': [], 'dump_signatures': [], 'postfile': [], 'dry_run': False}, {'DISTRO': 'fsl-imx-xwayland', 'PATH': '/home/iwave/iwg37m-release-bsp/sources/poky/scripts:/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin:/home/iwave/bin:/home/iwave/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LANG': 'en_IN', 'SHLVL': '1', 'BUILDDIR': '/home/iwave/iwg37m-release-bsp/build_imx8mn', 'LC_ALL': 'en_US.UTF-8', 'TERM': 'xterm', 'LANGUAGE': 'en_IN:en', 'XDG_SESSION_ID': '160', 'SHELL': '/bin/bash', 'MACHINE': 'imx8qm_iwg27m', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CONNECTION': '192.168.4.4 6214 192.168.2.119 22', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'BBPATH': '/home/iwave/iwg37m-release-bsp/build_imx8mn', 'ARCH': 'arm64', 'USER': 'iwave', 'SSH_CLIENT': '192.168.4.4 6214 22', 'SSH_TTY': '/dev/pts/20', 'OLDPWD': '/home/iwave', 'LOGNAME': 'iwave', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/iwave/git/iW-RainboW-G37M', '_': '/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin/bitbake', 'LDFLAGS': '', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'MAIL': '/var/mail/iwave', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'HOME': '/home/iwave'}, ['/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin/bitbake', 'core-image-minimal', '-c', 'populate_sd']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['setConfig', 'cmd', 'populate_sd']
+Running command ['buildTargets', ['core-image-minimal'], 'populate_sd']
+Processing Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 32224 at 2020-06-30 16:09:23.533172 ---
+Started bitbake server pid 32224
+DEBUG: BBCooker starting 1593513563.5346072
+DEBUG: BBCooker pyinotify1 1593513563.5405433
+DEBUG: BBCooker pyinotify2 1593513563.5408201
+DEBUG: BBCooker pyinotify3 1593513563.5453985
+DEBUG: BBCooker pyinotify complete 1593513563.545584
+DEBUG: Found bblayers.conf (/home/iwave/iwg37m-release-bsp/build_imx8mn/conf/bblayers.conf)
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/poky/meta
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/poky/meta-poky
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-multimedia
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale-3rdparty
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-freescale-distro
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-browser
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-gnome
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-filesystems
+DEBUG: Adding layer /home/iwave/iwg37m-release-bsp/sources/meta-qt5
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:746: including conf/abi_version.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:747: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+Entering server connection loop
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:748: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:749: including conf/local.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:750: including conf/multiconfig/default.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:751: including conf/machine/imx8mn_iwg27m.conf
+DEBUG: CONF file 'conf/machine/imx8mn_iwg27m.conf' not found
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:752: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:753: including conf/distro/fsl-imx-xwayland.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk/conf/distro/fsl-imx-xwayland.conf:3: including conf/distro/include/fsl-imx-base.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/meta-fsl-bsp-release/imx/meta-sdk/conf/distro/fsl-imx-xwayland.conf:4: including conf/distro/include/fsl-imx-preferred-env.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:754: including conf/distro/defaultsetup.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/include/tcmode-default.inc:73: including conf/distro/include/as-needed.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:755: including conf/documentation.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:756: including conf/licenses.conf
+DEBUG: CONF /home/iwave/iwg37m-release-bsp/sources/poky/meta/conf/bitbake.conf:757: including conf/sanity.conf
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/patch.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/terminal.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/staging.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/mirrors.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/utils.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/utility-tasks.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/metadata_scm.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/logging.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/meta-openembedded/meta-gnome/classes/sanity-meta-gnome.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/packagedata.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/chrpath.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/insane.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/linuxloader.bbclass (from /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /home/iwave/iwg37m-release-bsp/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/iwave/iwg37m-release-bsp/build_imx8mn/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/iwave/iwg37m-release-bsp/build_imx8mn/cache/bb_codeparser.dat'
+DEBUG: BBCooker parsed base configuration 1593513563.766472
+DEBUG: BBCooker startup complete 1593513563.7666166
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+Processing Client
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'force': False, 'debug': 0, 'invalidate_stamp': None, 'postfile': [], 'prefile': [], 'dump_signatures': [], 'profile': False, 'dry_run': False, 'extra_assume_provided': [], 'abort': True, 'verbose': False, 'debug_domains': [], 'server_timeout': None}, {'LOGNAME': 'iwave', 'SSH_TTY': '/dev/pts/20', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'iwave', 'XDG_SESSION_ID': '160', 'MAIL': '/var/mail/iwave', 'SSH_CONNECTION': '192.168.4.4 6214 192.168.2.119 22', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SHELL': '/bin/bash', 'LDFLAGS': '', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'PATH': '/home/iwave/iwg37m-release-bsp/sources/poky/scripts:/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin:/home/iwave/bin:/home/iwave/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'BBPATH': '/home/iwave/iwg37m-release-bsp/build_imx8mn', 'LC_ALL': 'en_US.UTF-8', '_': '/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin/bitbake', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'DISTRO': 'fsl-imx-xwayland', 'BUILDDIR': '/home/iwave/iwg37m-release-bsp/build_imx8mn', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CLIENT': '192.168.4.4 6214 22', 'OLDPWD': '/home/iwave', 'ARCH': 'arm64', 'LANGUAGE': 'en_IN:en', 'HOME': '/home/iwave', 'LANG': 'en_IN', 'XDG_RUNTIME_DIR': '/run/user/1000', 'TERM': 'xterm', 'PWD': '/home/iwave/git/iW-RainboW-G37M', 'MACHINE': 'imx8mn_iwg27m', 'SHLVL': '1', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop'}, ['/home/iwave/iwg37m-release-bsp/sources/poky/bitbake/bin/bitbake', 'core-image-minimal', '-c', 'populate_sd']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['setConfig', 'cmd', 'populate_sd']
+Running command ['buildTargets', ['core-image-minimal'], 'populate_sd']
+Processing Client
+Disconnecting Client
+No timeout, exiting.
+Exiting

@@ -137,7 +137,7 @@ struct ov5640 {
 	int pwn_gpio, rst_gpio;
 };
 
-tatic struct reg_value ov5640_init_setting_30fps_VGA[] = {
+static struct reg_value ov5640_init_setting_30fps_VGA[] = {
 	{0x3103, 0x11, 0, 0}, {0x3008, 0x82, 0, 5}, {0x3008, 0x42, 0, 0},
 	{0x3103, 0x03, 0, 0}, {0x3017, 0x00, 0, 0}, {0x3018, 0x00, 0, 0},
 	{0x3034, 0x18, 0, 0}, {0x3035, 0x14, 0, 0}, {0x3036, 0x38, 0, 0},
@@ -230,7 +230,7 @@ tatic struct reg_value ov5640_init_setting_30fps_VGA[] = {
 	{0x3a1f, 0x14, 0, 0}, {0x3008, 0x42, 0, 10}, {0x3c00, 0x04, 0, 300},
 };
 
-tatic struct reg_value ov5640_setting_30fps_VGA_640_480[] = {
+static struct reg_value ov5640_setting_30fps_VGA_640_480[] = {
 	{0x3008, 0x42, 0, 0},
 	{0x3035, 0x12, 0, 0}, {0x3036, 0x38, 0, 0}, {0x3c07, 0x08, 0, 0},
 	{0x3c09, 0x1c, 0, 0}, {0x3c0a, 0x9c, 0, 0}, {0x3c0b, 0x40, 0, 0},

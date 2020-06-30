@@ -61,7 +61,7 @@
 #include <linux/uaccess.h>
 
 
-#include "hyn_cst148_ASJ_G1548FH107GG_MA1_A_fw.h"
+#include "hyn_cst3xx.h"
 
 /******************************
 2018/12/22 steven :
